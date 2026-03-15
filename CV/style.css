@@ -172,7 +172,10 @@ main {
 
 .hero,
 .about,
-.contact {
+.contact,
+.projects,
+.project-hero,
+.project-details {
   display: grid;
   gap: 24px;
 }
@@ -186,7 +189,9 @@ main {
 .hero-card,
 .panel,
 .skill-card,
-.contact-card {
+.contact-card,
+.project-card,
+.project-summary-card {
   border: 1px solid var(--line);
   background: var(--panel);
   backdrop-filter: blur(12px);
@@ -197,6 +202,10 @@ main {
 .hero-card,
 .about,
 .contact,
+.projects,
+.project-hero-copy,
+.project-summary-card,
+.project-details,
 .skill-card {
   border-radius: 28px;
 }
@@ -305,6 +314,7 @@ main {
   padding: 22px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.18);
 }
 
 .photo-slot::before {
@@ -312,40 +322,34 @@ main {
   position: absolute;
   inset: 18px;
   border-radius: 18px;
-  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  z-index: 2;
 }
 
-.photo-frame {
-  position: relative;
+.photo-slot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 12, 20, 0.02), rgba(7, 12, 20, 0.16)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 42%);
+  pointer-events: none;
   z-index: 1;
-  max-width: 240px;
 }
 
-.photo-kicker {
-  display: inline-flex;
-  margin-bottom: 16px;
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--accent);
-  font-size: 0.74rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-}
-
-.photo-frame strong {
+.profile-photo {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 370px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 22px;
   display: block;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1.35rem;
-  line-height: 1.05;
-  margin-bottom: 10px;
-}
-
-.photo-frame p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.65;
+  filter: saturate(0.96) contrast(1.02) brightness(0.99);
+  transform: scale(1.005);
 }
 
 .hero-card-info {
@@ -358,10 +362,172 @@ main {
 }
 
 .about,
-.contact {
+.contact,
+.projects,
+.project-hero-copy,
+.project-summary-card,
+.project-details {
   padding: 28px;
   background: rgba(8, 16, 30, 0.72);
   border: 1px solid var(--line);
+}
+
+.projects-intro {
+  max-width: 720px;
+  margin-top: -4px;
+}
+
+.projects-intro p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+
+.project-card {
+  display: block;
+  padding: 28px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    var(--panel-strong);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(126, 240, 197, 0.14), transparent 28%),
+    linear-gradient(135deg, rgba(255, 209, 102, 0.08), transparent 36%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.project-card h4,
+.project-summary-card h3,
+.project-hero-copy h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--accent);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.project-card h4 {
+  margin: 20px 0 12px;
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  position: relative;
+  z-index: 1;
+}
+
+.project-card p {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--muted);
+  line-height: 1.75;
+  position: relative;
+  z-index: 1;
+}
+
+.project-meta {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: #dce7f8;
+  font-size: 0.92rem;
+  position: relative;
+  z-index: 1;
+}
+
+.project-arrow {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--accent-warm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(126, 240, 197, 0.28);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.28);
+}
+
+.project-page-header {
+  margin-bottom: 10px;
+}
+
+.project-hero {
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: stretch;
+}
+
+.project-hero-copy {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    var(--panel-strong);
+}
+
+.project-hero-copy h2 {
+  margin: 18px 0 14px;
+  font-size: clamp(1.55rem, 3vw, 2.7rem);
+  line-height: 0.98;
+  max-width: 13ch;
+}
+
+.project-hero-copy p,
+.project-summary-card p,
+.project-points,
+.project-detail-grid .panel p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-summary-card {
+  background:
+    radial-gradient(circle at top, rgba(255, 209, 102, 0.1), transparent 34%),
+    rgba(14, 26, 46, 0.88);
+}
+
+.project-summary-card h3 {
+  margin: 18px 0 14px;
+  font-size: 1.45rem;
+}
+
+.project-points {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.project-points li + li {
+  margin-top: 10px;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .contact-intro {
@@ -636,7 +802,9 @@ main {
   .hero,
   .about-grid,
   .skills-grid,
-  .contact-grid {
+  .contact-grid,
+  .project-hero,
+  .project-detail-grid {
     grid-template-columns: 1fr;
   }
 
@@ -674,8 +842,13 @@ main {
   .hero-card,
   .about,
   .contact,
+  .projects,
+  .project-hero-copy,
+  .project-summary-card,
+  .project-details,
   .skill-card,
-  .contact-card {
+  .contact-card,
+  .project-card {
     border-radius: 22px;
   }
 
@@ -683,7 +856,11 @@ main {
   .hero-copy,
   .hero-card,
   .about,
-  .contact {
+  .contact,
+  .projects,
+  .project-hero-copy,
+  .project-summary-card,
+  .project-details {
     padding: 20px;
   }
 }
