@@ -183,6 +183,14 @@ a {
   color: var(--muted);
 }
 
+.hero-location {
+  font-family: var(--font-m);
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
 .hero-bio {
   color: var(--muted-hi);
   max-width: 60ch;
@@ -370,6 +378,10 @@ a {
   align-items: center;
   gap: 16px;
   margin-bottom: 44px;
+}
+
+.about .section-tag {
+  margin-bottom: 20px;
 }
 
 .sec-num {
@@ -589,6 +601,11 @@ a {
   width: var(--pct);
 }
 
+/* 7ª card sola nell'ultima riga → si estende full-width */
+.skill-card:last-child:nth-child(3n+1) {
+  grid-column: 1 / -1;
+}
+
 /*
    PROGETTI
    */
@@ -750,7 +767,7 @@ a {
    */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -937,7 +954,7 @@ a {
   }
 
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .site-header {
@@ -981,6 +998,10 @@ a {
 
   .project-item {
     padding: 24px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
 
