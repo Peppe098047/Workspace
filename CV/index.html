@@ -4,202 +4,292 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Giuseppe Emanuele Rizzo | CV</title>
-  <meta
-    name="description"
-    content="Curriculum online di Giuseppe Emanuele Rizzo, sviluppatore web con focus su Java, JavaScript, TypeScript e sviluppo frontend."
-  >
+  <meta name="description" content="Curriculum online di Giuseppe Emanuele Rizzo, sviluppatore web con focus su Java, JavaScript, TypeScript e sviluppo frontend.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="brand-block">
-        <p class="eyebrow">Curriculum Vitae</p>
-        <h1>Giuseppe Emanuele Rizzo</h1>
-        <p class="role">Junior Developer</p>
-      </div>
-      <div class="header-accent" aria-hidden="true">
-        <span class="accent-line"></span>
-        <span class="accent-dot"></span>
-      </div>
-    </header>
 
-    <main>
-      <section class="hero" id="profilo">
-        <div class="hero-copy reveal">
-          <span class="badge">20 anni</span>
-          <h2>Sviluppo interfacce chiare, solide e pronte a crescere.</h2>
-          <p>
-            Sono Giuseppe Emanuele Rizzo, uno sviluppatore orientato alla costruzione di esperienze web
-            moderne, curate e funzionali. Lavoro con attenzione alla qualita del codice, alla struttura
-            del progetto e alla leggibilita dell'interfaccia, con l'obiettivo di creare soluzioni affidabili
-            e professionali.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-secondary" href="#progetti">Progetti</a>
-            <a class="button button-primary" href="#contatti">Contatti</a>
-            <a class="button button-secondary" href="#competenze">Stack tecnico</a>
+  <!-- HEADER FISSO -->
+  <header class="site-header">
+    <span class="header-label"><span class="header-slash">/</span> curriculum_vitae</span>
+    <nav class="header-nav">
+      <a href="#profilo">_profilo</a>
+      <a href="#competenze">_stack</a>
+      <a href="#progetti">_progetti</a>
+      <a href="#contatti">_contatti</a>
+    </nav>
+  </header>
+
+  <div class="page-wrap">
+
+    <!-- HERO -->
+    <section class="hero" id="profilo">
+      <div class="hero-left">
+        <p class="hero-eyebrow">01 — Profilo</p>
+        <h1 class="hero-name">
+          <span class="name-word" data-word="GIUSEPPE">GIUSEPPE</span>
+          <span class="name-word" data-word="EMANUELE">EMANUELE</span>
+          <span class="name-word" data-word="RIZZO">RIZZO</span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-bracket">&#91;</span>
+          <span class="role-text">Junior Developer</span>
+          <span class="role-bracket">&#93;</span>
+          <span class="role-sep">—</span>
+          <span class="role-age">20 anni</span>
+        </div>
+        <p class="hero-bio">
+          Sviluppatore orientato alla costruzione di esperienze web moderne, curate e funzionali.
+          Lavoro con attenzione alla qualità del codice, alla struttura del progetto e alla
+          leggibilità dell'interfaccia, con l'obiettivo di creare soluzioni affidabili e professionali.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#progetti">
+            <span>Progetti</span>
+            <span class="btn-ico">↗</span>
+          </a>
+          <a class="btn btn-outline" href="#contatti">
+            <span>Contatti</span>
+            <span class="btn-ico">→</span>
+          </a>
+          <a class="btn btn-ghost" href="#competenze">
+            <span>Stack</span>
+            <span class="btn-ico">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="photo-frame">
+          <img
+            class="profile-photo"
+            src="img/giuseppe.jpg.jpeg"
+            alt="Foto profilo di Giuseppe Emanuele Rizzo"
+          >
+          <div class="scanlines" aria-hidden="true"></div>
+          <div class="photo-badge">
+            <span class="dot-green"></span>
+            <span>disponibile</span>
           </div>
         </div>
+        <div class="hero-card-info">
+          <p class="info-label">// profilo professionale</p>
+          <p class="info-text">
+            Persona determinata, con forte interesse per lo sviluppo software, la crescita continua
+            e la realizzazione di progetti web puliti, performanti e ben presentati.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <div class="hero-card reveal">
-          <div class="photo-slot" aria-label="Foto profilo">
-            <img
-              class="profile-photo"
-              src="img/giuseppe.jpg.jpeg"
-              alt="Foto profilo di Giuseppe"
-            />
-          </div>
-          <div class="hero-card-info">
-            <p class="label">Profilo professionale</p>
+    <main>
+
+      <!-- CHI SONO -->
+      <section class="about section-block reveal" id="about">
+        <div class="section-tag">
+          <span class="sec-num">02</span>
+          <span class="sec-sep">———</span>
+          <span class="sec-title">Chi sono</span>
+        </div>
+        <div class="about-layout">
+          <div class="about-text">
+            <p>
+              Mi sto specializzando nello sviluppo di applicazioni e siti web con un approccio pratico
+              e professionale. Mi interessa costruire prodotti digitali che uniscano estetica, chiarezza
+              e logica tecnica, mantenendo sempre alta l'attenzione verso usabilità, ordine del codice
+              e capacità di evoluzione del progetto.
+            </p>
             <p>
               Persona determinata, con forte interesse per lo sviluppo software, la crescita continua
               e la realizzazione di progetti web puliti, performanti e ben presentati.
             </p>
           </div>
+          <div class="about-metrics">
+            <div class="metric-item">
+              <span class="metric-num" data-target="6">0</span>
+              <span class="metric-label">tecnologie principali</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num" data-target="1">0</span>
+              <span class="metric-label">progetto in portfolio</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num" data-target="21">0</span>
+              <span class="metric-label">anni di età</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="about reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Presentazione</p>
-          <h3>Chi sono</h3>
-        </div>
-        <div class="about-grid">
-          <article class="panel">
-            <p>
-              Mi sto specializzando nello sviluppo di applicazioni e siti web con un approccio pratico e professionale.
-              Mi interessa costruire prodotti digitali che uniscano estetica, chiarezza e logica tecnica, mantenendo
-              sempre alta l'attenzione verso usabilita, ordine del codice e capacita di evoluzione del progetto.
-            </p>
-          </article>
-          <article class="panel highlight">
-            <p class="metric">6</p>
-            <p class="metric-label">Tecnologie principali utilizzate</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="skills" id="competenze">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Competenze</p>
-          <h3>Linguaggi e tecnologie</h3>
+      <!-- COMPETENZE -->
+      <section class="skills section-block" id="competenze">
+        <div class="section-tag reveal">
+          <span class="sec-num">03</span>
+          <span class="sec-sep">———</span>
+          <span class="sec-title">Linguaggi e tecnologie</span>
         </div>
 
         <div class="skills-grid">
           <article class="skill-card reveal">
-            <span class="skill-index">01</span>
-            <span class="skill-tag">Backend Logic</span>
-            <h4>Java</h4>
+            <span class="skill-bg-num">01</span>
+            <span class="skill-cat">Backend Logic</span>
+            <h3>Java</h3>
             <p>Base solida per logica applicativa, programmazione object-oriented e sviluppo strutturato.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
           </article>
           <article class="skill-card reveal">
-            <span class="skill-index">02</span>
-            <span class="skill-tag">Dynamic Web</span>
-            <h4>JavaScript</h4>
+            <span class="skill-bg-num">02</span>
+            <span class="skill-cat">Dynamic Web</span>
+            <h3>JavaScript</h3>
             <p>Sviluppo di interazioni dinamiche, comportamento lato client e componenti web moderni.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
           </article>
           <article class="skill-card reveal">
-            <span class="skill-index">03</span>
-            <span class="skill-tag">Typed Code</span>
-            <h4>TypeScript</h4>
-            <p>Scrittura di codice piu affidabile e manutenibile grazie a tipizzazione e struttura chiara.</p>
+            <span class="skill-bg-num">03</span>
+            <span class="skill-cat">Typed Code</span>
+            <h3>TypeScript</h3>
+            <p>Scrittura di codice più affidabile e manutenibile grazie a tipizzazione e struttura chiara.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--pct: 65%"></div></div>
           </article>
           <article class="skill-card reveal">
-            <span class="skill-index">04</span>
-            <span class="skill-tag">Semantic Markup</span>
-            <h4>HTML</h4>
+            <span class="skill-bg-num">04</span>
+            <span class="skill-cat">Semantic Markup</span>
+            <h3>HTML</h3>
             <p>Costruzione di strutture semantiche, leggibili e adatte a pagine professionali e responsive.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
           </article>
           <article class="skill-card reveal">
-            <span class="skill-index">05</span>
-            <span class="skill-tag">Visual Systems</span>
-            <h4>CSS</h4>
-            <p>Design visivo, layout responsive, animazioni leggere ed esperienza utente piu curata.</p>
+            <span class="skill-bg-num">05</span>
+            <span class="skill-cat">Visual Systems</span>
+            <h3>CSS</h3>
+            <p>Design visivo, layout responsive, animazioni leggere ed esperienza utente più curata.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
           </article>
           <article class="skill-card reveal">
-            <span class="skill-index">06</span>
-            <span class="skill-tag">Data Layer</span>
-            <h4>MySQL</h4>
+            <span class="skill-bg-num">06</span>
+            <span class="skill-cat">Data Layer</span>
+            <h3>MySQL</h3>
             <p>Gestione di dati relazionali, query e organizzazione delle informazioni lato database.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--pct: 60%"></div></div>
           </article>
         </div>
       </section>
 
-      <section class="projects reveal" id="progetti">
-        <div class="section-heading">
-          <p class="eyebrow">Progetti</p>
-          <h3>Esperienze reali in costruzione</h3>
+      <!-- PROGETTI -->
+      <section class="projects section-block reveal" id="progetti">
+        <div class="section-tag">
+          <span class="sec-num">04</span>
+          <span class="sec-sep">———</span>
+          <span class="sec-title">Progetti</span>
         </div>
+        <p class="section-intro">
+          Primo progetto strutturato del mio percorso — attualmente in fase di sviluppo attivo.
+        </p>
+        <div class="projects-list">
+          <article class="project-item">
+            <div class="project-top">
+              <span class="project-index">Project_01</span>
+              <span class="project-wip">⬡ work in progress</span>
+            </div>
+            <h3 class="project-name">Ping Plan</h3>
 
-        <div class="projects-intro">
-          <p>
-            Qui raccolgo i progetti che rappresentano meglio il mio percorso di crescita. Al momento
-            sto presentando Ping Plan, con una pagina dedicata in cui approfondiro obiettivi, struttura
-            e scelte di sviluppo.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-          <a class="project-card" href="./ping-plan.html">
-            <span class="project-tag">Project 01</span>
-            <h4>Ping Plan</h4>
-            <p>
-              Una scheda dedicata al mio progetto, pensata per raccontare idea, funzionalita e sviluppo
-              tecnico in modo ordinato e professionale.
+            <p class="project-desc">
+              Ping Plan è un'applicazione web pensata per chi desidera esplorare nuove città senza dover pianificare da zero.
+              L'utente seleziona la destinazione e l'app genera un itinerario completo e personalizzato.
             </p>
-            <div class="project-meta">
-              <span>Pagina dedicata</span>
-              <span class="project-arrow" aria-hidden="true">Apri</span>
+
+            <p class="project-desc">
+              Al centro del progetto c'è un'Intelligenza Artificiale dedicata, integrata per costruire percorsi su misura,
+              suggerire luoghi di interesse e rispondere in tempo reale alle domande dell'utente — rendendo l'esperienza
+              di viaggio più semplice e intuitiva.
+            </p>
+
+            <div class="project-bottom">
+              <div class="project-tags">
+                <span class="ptag">Web App</span>
+                <span class="ptag">AI</span>
+                <span class="ptag">Travel</span>
+              </div>
+              <span class="project-coming">Pagina dedicata — in arrivo</span>
             </div>
-          </a>
+          </article>
         </div>
       </section>
 
-      <section class="contact reveal" id="contatti">
-        <div class="section-heading">
-          <p class="eyebrow">Connessioni</p>
-          <h3>Applicazioni e recapiti</h3>
+      <!-- FORMAZIONE -->
+      <section class="education section-block reveal" id="formazione">
+        <div class="section-tag">
+          <span class="sec-num">05</span>
+          <span class="sec-sep">———</span>
+          <span class="sec-title">Formazione</span>
         </div>
-
-        <div class="contact-intro">
-          <p>
-            Qui troverai i miei riferimenti principali. I collegamenti definitivi a Instagram, LinkedIn e Gmail
-            verranno inseriti direttamente da me.
-          </p>
+        <div class="edu-timeline">
+          <div class="edu-entry">
+            <span class="edu-date">in corso</span>
+            <div class="edu-content">
+              <h4>ITS Steve Jobs Academy</h4>
+              <p>Percorso formativo orientato alla programmazione, alle basi informatiche e allo sviluppo di applicazioni web e desktop.</p>
+            </div>
+          </div>
+          <div class="edu-entry">
+            <span class="edu-date">continuo</span>
+            <div class="edu-content">
+              <h4>Autoformazione &amp; Progetti pratici</h4>
+              <p>Studio autonomo attraverso documentazioni ufficiali, corsi online e costruzione di progetti reali per consolidare le competenze tecniche.</p>
+            </div>
+          </div>
         </div>
+      </section>
 
+      <!-- CONTATTI -->
+      <section class="contact section-block reveal" id="contatti">
+        <div class="section-tag">
+          <span class="sec-num">06</span>
+          <span class="sec-sep">———</span>
+          <span class="sec-title">Contatti</span>
+        </div>
+        <p class="section-intro">
+          Puoi trovarmi sui social o scrivermi direttamente via email — rispondo volentieri a proposte di collaborazione e opportunità lavorative.
+        </p>
         <div class="contact-grid">
-          <a class="contact-card" href="#">
-            <span class="contact-icon">IG</span>
-            <div>
+          <a class="contact-card" href="https://www.instagram.com/giuseppe.rizzoo/" target="_blank" rel="noopener noreferrer">
+            <span class="cc-code">IG</span>
+            <div class="cc-info">
               <strong>Instagram</strong>
-              <p>Spazio dedicato al mio profilo personale e ai miei aggiornamenti.</p>
+              <p>Seguimi per aggiornamenti sui miei progetti e sul mio percorso da sviluppatore.</p>
             </div>
-            <span class="contact-arrow" aria-hidden="true">01</span>
+            <span class="cc-num">01</span>
           </a>
-          <a class="contact-card" href="#">
-            <span class="contact-icon">in</span>
-            <div>
+          <a class="contact-card" href="https://www.linkedin.com/in/giuseppe-rizzo-62940b396/" target="_blank" rel="noopener noreferrer">
+            <span class="cc-code">in</span>
+            <div class="cc-info">
               <strong>LinkedIn</strong>
-              <p>Sezione pronta per il mio profilo professionale e il networking lavorativo.</p>
+              <p>Connettiti con me per opportunità professionali e per espandere la rete lavorativa.</p>
             </div>
-            <span class="contact-arrow" aria-hidden="true">02</span>
+            <span class="cc-num">02</span>
           </a>
-          <a class="contact-card" href="#">
-            <span class="contact-icon">@</span>
-            <div>
+          <div class="contact-card contact-card--email">
+            <span class="cc-code">@</span>
+            <div class="cc-info">
               <strong>Gmail</strong>
-              <p>Collegamento riservato al mio contatto email diretto.</p>
+              <p>Scrivimi direttamente per qualsiasi proposta o collaborazione.</p>
+              <a class="cc-email" href="mailto:rgiuseppe05@gmail.com">rgiuseppe05@gmail.com</a>
             </div>
-            <span class="contact-arrow" aria-hidden="true">03</span>
-          </a>
+            <span class="cc-num">03</span>
+          </div>
         </div>
       </section>
+
     </main>
+
+    <footer class="site-footer">
+      <span class="footer-copy">© 2025 Giuseppe Emanuele Rizzo</span>
+      <span class="footer-built">Costruito con <span class="footer-accent">HTML · CSS · JS</span></span>
+    </footer>
+
   </div>
 
   <script src="./main.js"></script>
