@@ -601,9 +601,14 @@ a {
   width: var(--pct);
 }
 
-/* 7ª card sola nell'ultima riga → si estende full-width */
+/* 7ª card sola nell'ultima riga → occupa tutta la riga, nessuna cella vuota */
 .skill-card:last-child:nth-child(3n+1) {
-  grid-column: 1 / -1;
+  grid-column: 2 / 3;
+}
+
+/* Numero decorativo più piccolo sulla card a larghezza piena */
+.skill-card:last-child:nth-child(3n+1) .skill-bg-num {
+  font-size: 3rem;
 }
 
 /*
