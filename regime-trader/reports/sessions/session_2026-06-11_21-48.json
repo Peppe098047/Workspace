@@ -1,0 +1,301 @@
+{
+  "session_start": "2026-06-11 15:34:04.531895",
+  "session_end": "2026-06-11 21:48:16.676080",
+  "mode": "PAPER",
+  "timeframe": "1Hour",
+  "symbols": [
+    "SPY",
+    "SH",
+    "RWM",
+    "DOG",
+    "NVDA",
+    "MU",
+    "QQQ",
+    "AMZN",
+    "AAPL",
+    "MSFT",
+    "IWM",
+    "AVGO"
+  ],
+  "clean_shutdown": true,
+  "start_equity": 96981.01,
+  "final_equity": 97116.09,
+  "peak_equity": 100624.81,
+  "trades": [
+    {
+      "timestamp": "2026-06-11T16:01:06.830255",
+      "symbol": "SH",
+      "direction": "LONG",
+      "shares": 426,
+      "entry": 34.09,
+      "stop": 33.38617202496722,
+      "regime": "CRASH",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-11T16:01:12.212132",
+      "symbol": "DOG",
+      "direction": "LONG",
+      "shares": 642,
+      "entry": 22.63,
+      "stop": 22.363522364057875,
+      "regime": "CRASH",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-11T16:01:21.805709",
+      "symbol": "NVDA",
+      "direction": "LONG",
+      "shares": 71,
+      "entry": 203.265,
+      "stop": 201.0808695551394,
+      "regime": "CRASH",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-11T16:01:25.654843",
+      "symbol": "QQQ",
+      "direction": "LONG",
+      "shares": 20,
+      "entry": 704.11,
+      "stop": 697.6256560701576,
+      "regime": "CRASH",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-11T16:02:02.004871",
+      "symbol": "IWM",
+      "direction": "LONG",
+      "shares": 2,
+      "entry": 286.39,
+      "stop": 283.22989028902515,
+      "regime": "CRASH",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-11T17:01:04.103476",
+      "symbol": "QQQ",
+      "direction": "LONG",
+      "shares": 20,
+      "entry": 695.65,
+      "stop": 688.9486959426973,
+      "regime": "CRASH",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-11T17:01:11.426799",
+      "symbol": "AAPL",
+      "direction": "LONG",
+      "shares": 49,
+      "entry": 289.91,
+      "stop": 287.6177405221504,
+      "regime": "CRASH",
+      "dry_run": false
+    }
+  ],
+  "events": [
+    {
+      "time": "15:38:03",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, AVGO, IWM, MSFT, NVDA, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "15:38:03",
+      "kind": "SKIP",
+      "symbol": "*",
+      "detail": "blackout apertura (30 min): niente BUY"
+    },
+    {
+      "time": "16:01:06",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, AVGO, MSFT, MU, RWM, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "16:01:11",
+      "kind": "BUY",
+      "symbol": "SH",
+      "detail": "426 az @ 34.07"
+    },
+    {
+      "time": "16:01:12",
+      "kind": "STOP",
+      "symbol": "SH",
+      "detail": "stop @ 33.39"
+    },
+    {
+      "time": "16:01:21",
+      "kind": "BUY",
+      "symbol": "DOG",
+      "detail": "642 az @ 22.62"
+    },
+    {
+      "time": "16:01:21",
+      "kind": "STOP",
+      "symbol": "DOG",
+      "detail": "stop @ 22.36"
+    },
+    {
+      "time": "16:01:24",
+      "kind": "BUY",
+      "symbol": "NVDA",
+      "detail": "71 az @ 203.28"
+    },
+    {
+      "time": "16:01:25",
+      "kind": "STOP",
+      "symbol": "NVDA",
+      "detail": "stop @ 201.08"
+    },
+    {
+      "time": "16:02:01",
+      "kind": "BUY",
+      "symbol": "QQQ",
+      "detail": "20 az @ 704.11"
+    },
+    {
+      "time": "16:02:37",
+      "kind": "BUY",
+      "symbol": "IWM",
+      "detail": "2 az @ 286.39"
+    },
+    {
+      "time": "16:18:27",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "20 az @ 699.78"
+    },
+    {
+      "time": "16:18:59",
+      "kind": "CLOSE",
+      "symbol": "NVDA",
+      "detail": "71 az @ 201.36"
+    },
+    {
+      "time": "17:01:03",
+      "kind": "SKIP",
+      "symbol": "AMZN, AVGO, MSFT, MU, NVDA, RWM, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "17:01:11",
+      "kind": "BUY",
+      "symbol": "QQQ",
+      "detail": "20 az @ 695.85"
+    },
+    {
+      "time": "17:01:11",
+      "kind": "STOP",
+      "symbol": "QQQ",
+      "detail": "stop @ 688.95"
+    },
+    {
+      "time": "17:01:13",
+      "kind": "BUY",
+      "symbol": "AAPL",
+      "detail": "49 az @ 289.99"
+    },
+    {
+      "time": "17:01:14",
+      "kind": "STOP",
+      "symbol": "AAPL",
+      "detail": "stop @ 287.62"
+    },
+    {
+      "time": "18:01:04",
+      "kind": "SKIP",
+      "symbol": "AMZN, AVGO, MSFT, NVDA, RWM, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "20:01:04",
+      "kind": "SKIP",
+      "symbol": "AMZN, MSFT, NVDA, RWM, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "21:26:45",
+      "kind": "CLOSE",
+      "symbol": "DOG",
+      "detail": "642 az @ 22.38"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "AAPL",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "IWM",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "SH",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "SH",
+      "detail": "426 az @ 33.66"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "AAPL",
+      "detail": "49 az @ 295.98"
+    },
+    {
+      "time": "21:45:04",
+      "kind": "CLOSE",
+      "symbol": "IWM",
+      "detail": "2 az @ 290.73"
+    },
+    {
+      "time": "21:45:06",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "20 az @ 717.11"
+    }
+  ],
+  "regime_changes": [],
+  "warnings": [
+    {
+      "time": "16:02:41",
+      "level": "WARNING",
+      "message": "Nessuno stop order trovato per QQQ"
+    },
+    {
+      "time": "16:02:42",
+      "level": "WARNING",
+      "message": "Stop broker mancante per QQQ: ripiazzato a 699.84 per 20 azioni"
+    },
+    {
+      "time": "16:02:42",
+      "level": "WARNING",
+      "message": "Nessuno stop order trovato per IWM"
+    },
+    {
+      "time": "16:02:43",
+      "level": "WARNING",
+      "message": "Stop broker mancante per IWM: ripiazzato a 283.23 per 2 azioni"
+    },
+    {
+      "time": "21:12:12",
+      "level": "WARNING",
+      "message": "Prezzi live non disponibili: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/bars/latest?feed=iex&symbols=AAPL%2CDOG%2CIWM%2CQQQ%2CSH (Caused by ConnectTimeoutError(<HTTPSConnection(host='data.alpaca.markets', port=443) at 0x7d6fe3adda90>, 'Connection to data.alpaca.markets timed out. (connect timeout=None)'))"
+    }
+  ],
+  "open_positions": {}
+}

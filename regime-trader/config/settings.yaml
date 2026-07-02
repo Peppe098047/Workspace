@@ -1,0 +1,211 @@
+# =============================================================================
+# regime-trader — Parametri di configurazione globali
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# BROKER
+# ---------------------------------------------------------------------------
+broker:
+  paper_trading: true                       # true = paper account, false = live
+  symbols:                                  # Universo di simboli tradati
+    - SPY
+    - QQQ
+    - AAPL
+    - MSFT
+    - AMZN
+    - GOOGL
+    - NVDA
+    - META
+    - TSLA
+    - AMD
+  timeframe: "1Hour"                        # Granularità barre OHLCV (intraday → flat overnight)
+  intraday: true                            # true = chiude tutto a fine giornata (no gap risk)
+  square_off_minutes: 15                    # Minuti prima della chiusura mercato per liquidare tutto
+  stop_refresh_minutes: 5                   # Manutenzione trailing stop coi prezzi correnti (min)
+  no_entry_first_minutes: 30                # Niente BUY nei primi N min dall'apertura (spread larghi)
+
+# ---------------------------------------------------------------------------
+# SCREENER — Selezione automatica dei titoli più liquidi (gira all'avvio)
+# Lo spread è l'unico costo reale dell'intraday: più liquidità = spread minore.
+# Se enabled=false il bot usa la lista broker.symbols qui sopra.
+# ---------------------------------------------------------------------------
+screener:
+  enabled: true
+  top_n: 12                                 # Titoli operativi (4 fissi: SPY + 3 inversi, + 8 azioni)
+  lookback_days: 20                         # Giorni daily per la media del dollar volume
+  min_price: 10.0                           # Sotto questo prezzo gli spread % esplodono
+  min_dollar_volume: 200000000              # Minimo $200M scambiati al giorno (media)
+  # SPY sempre primo (termometro HMM + benchmark). SH/RWM/DOG = ETF INVERSI 1x:
+  # salgono quando il mercato scende → esposizione bearish restando LONG (niente
+  # short, niente margine). Nei ribassi il ranking momentum sceglie il più forte
+  # (le discese non sono uniformi: a volte guidano le small cap, a volte i tech).
+  # Sempre inclusi perché da soli non passerebbero il filtro dollar volume.
+  # SOLO inversi 1x: niente SQQQ/SDS (leva strutturale, contro max_leverage 1.0).
+  always_include: [SPY, SH, RWM, DOG]
+  universe:                                 # Universo ampio di candidati (large cap liquide)
+    - SPY
+    - SH                                    # inverso S&P 500 (1x)
+    - PSQ                                   # inverso Nasdaq-100 (1x)
+    - RWM                                   # inverso Russell 2000 (1x)
+    - DOG                                   # inverso Dow Jones (1x)
+    - QQQ
+    - IWM
+    - DIA
+    - AAPL
+    - MSFT
+    - NVDA
+    - AMZN
+    - GOOGL
+    - META
+    - TSLA
+    - AVGO
+    - AMD
+    - NFLX
+    - COST
+    - LLY
+    - V
+    - MA
+    - JPM
+    - BAC
+    - WFC
+    - GS
+    - MS
+    - UNH
+    - XOM
+    - CVX
+    - WMT
+    - HD
+    - PG
+    - JNJ
+    - ABBV
+    - MRK
+    - ORCL
+    - CRM
+    - ADBE
+    - INTC
+    - QCOM
+    - TXN
+    - MU
+    - AMAT
+    - KO
+    - PEP
+    - MCD
+    - NKE
+    - DIS
+    - CAT
+    - BA
+    - GE
+    - UBER
+    - PLTR
+    - COIN
+    - PYPL
+    - SBUX
+    - ABNB
+
+# ---------------------------------------------------------------------------
+# CALENDAR — Blackout ingressi attorno agli annunci macro (Forex Factory)
+# CPI, NFP, FOMC muovono il mercato in modo violento: niente BUY nella
+# finestra attorno all'annuncio. Stop e square-off restano attivi.
+# Feed gratuito, nessuna API key. Fail-open: senza feed né cache, filtro spento.
+# ---------------------------------------------------------------------------
+calendar:
+  enabled: true
+  blackout_minutes_before: 15               # Blocco ingressi N min PRIMA dell'annuncio
+  blackout_minutes_after: 15                # ...e N min DOPO (il mercato digerisce il dato)
+  currencies: [USD]                         # Solo eventi che muovono il mercato USA
+  impacts: [High]                           # Solo alto impatto (CPI, NFP, FOMC...)
+
+# ---------------------------------------------------------------------------
+# RANKING — Selezione momentum dei titoli da comprare (gira a ogni ciclo)
+# Il regime HMM decide QUANTO investire; il ranking decide QUALI titoli.
+# I titoli già in posizione non vengono mai esclusi (niente churn).
+# ---------------------------------------------------------------------------
+ranking:
+  enabled: true
+  lookback_bars: 20                         # Barre per il momentum (~3 giorni orari)
+  top_k: 5                                  # Solo i migliori K possono ricevere BUY (= max_concurrent)
+  benchmark: SPY                            # Riferimento per la relative strength
+  inverse_pairs:                            # Mutua esclusione: mai un ETF e il suo inverso insieme
+    SH: SPY                                 # (long su entrambi = auto-copertura, solo costi)
+    PSQ: QQQ
+    RWM: IWM
+    DOG: DIA
+
+# ---------------------------------------------------------------------------
+# HMM — Hidden Markov Model per il regime detection
+# ---------------------------------------------------------------------------
+hmm:
+  n_candidates: [3, 4, 5, 6, 7]            # Numero di stati nascosti da testare
+  n_init: 10                               # Re-inizializzazioni random per fit
+  covariance_type: "full"                  # Tipo di matrice di covarianza
+  min_train_bars: 252                      # Barre minime per addestrare il modello (1 anno)
+  stability_bars: 3                        # Barre consecutive per confermare un regime
+  flicker_window: 20                       # Finestra per rilevare flicker di regime
+  flicker_threshold: 4                     # Max cambi di regime nella finestra flicker
+  min_confidence: 0.55                     # Probabilità minima per accettare un regime
+
+# ---------------------------------------------------------------------------
+# STRATEGY — Allocazioni per regime
+# ---------------------------------------------------------------------------
+strategy:
+  # Regime bassa volatilità
+  low_vol_allocation: 0.95                 # Quota del portafoglio investita
+
+  # Regime volatilità media — con trend confermato
+  mid_vol_allocation_trend: 0.95
+
+  # Regime volatilità media — senza trend (laterale)
+  mid_vol_allocation_no_trend: 0.60
+
+  # Regime alta volatilità / crisi
+  high_vol_allocation: 0.60
+
+  # Leva applicabile in regime low-vol
+  low_vol_leverage: 1.25
+
+  # Soglia minima di deviazione per scatenare un ribilanciamento
+  rebalance_threshold: 0.10               # 10% di drift dal target
+
+  # Moltiplicatore sizing in caso di incertezza del regime
+  uncertainty_size_mult: 0.50            # Dimezza le posizioni se il modello è incerto
+
+# ---------------------------------------------------------------------------
+# RISK — Gestione del rischio e limiti operativi
+# ---------------------------------------------------------------------------
+risk:
+  max_risk_per_trade: 0.01               # Max rischio per singolo trade (1% del capitale)
+  max_exposure: 0.80                     # Max esposizione totale del portafoglio (% equity)
+  max_leverage: 1.0                      # Leva massima: 1.0 = SOLO capitale proprio, niente margine
+  max_single_position: 0.15             # Max peso di un singolo asset (15%)
+  max_concurrent: 5                     # Max posizioni aperte contemporaneamente
+  max_daily_trades: 20                  # Max trade eseguibili in un giorno
+  reentry_cooldown_minutes: 30          # Dopo una vendita/stop-out, niente ricompra per N minuti
+
+  # Drawdown giornaliero
+  daily_dd_reduce: 0.02                 # Riduce sizing al 50% se DD giornaliero supera soglia
+  daily_dd_halt: 0.03                   # Stop trading giornaliero se DD supera soglia
+
+  # Drawdown settimanale
+  weekly_dd_reduce: 0.05                # Riduce sizing se DD settimanale supera soglia
+  weekly_dd_halt: 0.07                  # Stop trading settimanale se DD supera soglia
+
+  # Drawdown dal picco (high-water mark)
+  max_dd_from_peak: 0.10               # Halt completo se DD dal picco supera il 10%
+
+# ---------------------------------------------------------------------------
+# BACKTEST — Parametri per walk-forward backtesting
+# ---------------------------------------------------------------------------
+backtest:
+  slippage_pct: 0.0005                  # Slippage simulato per trade (0.05%)
+  initial_capital: 100000               # Capitale iniziale in USD
+  train_window: 252                     # Barre di training per ogni fold (1 anno)
+  test_window: 126                      # Barre di test per ogni fold (6 mesi)
+  step_size: 126                        # Avanzamento della finestra tra un fold e il prossimo
+  risk_free_rate: 0.045                 # Tasso risk-free annualizzato (per Sharpe)
+
+# ---------------------------------------------------------------------------
+# MONITORING — Dashboard e alerting
+# ---------------------------------------------------------------------------
+monitoring:
+  dashboard_refresh_seconds: 5          # Frequenza aggiornamento dashboard terminale
+  alert_rate_limit_minutes: 15          # Cooldown minimo tra alert dello stesso tipo

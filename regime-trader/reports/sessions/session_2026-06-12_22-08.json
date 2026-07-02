@@ -1,0 +1,259 @@
+{
+  "session_start": "2026-06-12 15:34:34.463749",
+  "session_end": "2026-06-12 22:08:11.134000",
+  "mode": "PAPER",
+  "timeframe": "1Hour",
+  "symbols": [
+    "SPY",
+    "SH",
+    "RWM",
+    "DOG",
+    "NVDA",
+    "MU",
+    "QQQ",
+    "AAPL",
+    "AMZN",
+    "IWM",
+    "MSFT",
+    "INTC"
+  ],
+  "clean_shutdown": true,
+  "start_equity": 97115.87,
+  "final_equity": 97457.89,
+  "peak_equity": 100624.81,
+  "trades": [
+    {
+      "timestamp": "2026-06-12T16:01:04.322698",
+      "symbol": "SPY",
+      "direction": "LONG",
+      "shares": 19,
+      "entry": 738.05,
+      "stop": 733.6283610574641,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-12T16:01:09.756688",
+      "symbol": "MU",
+      "direction": "LONG",
+      "shares": 8,
+      "entry": 994.72,
+      "stop": 915.7431192023851,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-12T16:01:13.214932",
+      "symbol": "QQQ",
+      "direction": "LONG",
+      "shares": 20,
+      "entry": 716.15,
+      "stop": 706.0356660603895,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-12T16:01:18.575054",
+      "symbol": "IWM",
+      "direction": "LONG",
+      "shares": 49,
+      "entry": 293.14,
+      "stop": 284.2939174250983,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-12T16:01:21.741195",
+      "symbol": "INTC",
+      "direction": "LONG",
+      "shares": 51,
+      "entry": 120.28,
+      "stop": 107.76602380976209,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    }
+  ],
+  "events": [
+    {
+      "time": "15:40:03",
+      "kind": "SKIP",
+      "symbol": "AMZN, DOG, MSFT, NVDA, RWM, SH, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "15:40:04",
+      "kind": "SKIP",
+      "symbol": "*",
+      "detail": "blackout apertura (30 min): niente BUY"
+    },
+    {
+      "time": "16:01:04",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, DOG, MSFT, NVDA, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "16:01:08",
+      "kind": "BUY",
+      "symbol": "SPY",
+      "detail": "19 az @ 738.19"
+    },
+    {
+      "time": "16:01:09",
+      "kind": "STOP",
+      "symbol": "SPY",
+      "detail": "stop @ 733.63"
+    },
+    {
+      "time": "16:01:12",
+      "kind": "BUY",
+      "symbol": "MU",
+      "detail": "8 az @ 994.94"
+    },
+    {
+      "time": "16:01:12",
+      "kind": "STOP",
+      "symbol": "MU",
+      "detail": "stop @ 915.74"
+    },
+    {
+      "time": "16:01:17",
+      "kind": "BUY",
+      "symbol": "QQQ",
+      "detail": "20 az @ 716.22"
+    },
+    {
+      "time": "16:01:18",
+      "kind": "STOP",
+      "symbol": "QQQ",
+      "detail": "stop @ 706.04"
+    },
+    {
+      "time": "16:01:21",
+      "kind": "BUY",
+      "symbol": "IWM",
+      "detail": "49 az @ 293.07"
+    },
+    {
+      "time": "16:01:21",
+      "kind": "STOP",
+      "symbol": "IWM",
+      "detail": "stop @ 284.29"
+    },
+    {
+      "time": "16:01:24",
+      "kind": "BUY",
+      "symbol": "INTC",
+      "detail": "51 az @ 120.00"
+    },
+    {
+      "time": "16:01:24",
+      "kind": "STOP",
+      "symbol": "INTC",
+      "detail": "stop @ 107.77"
+    },
+    {
+      "time": "18:01:04",
+      "kind": "SKIP",
+      "symbol": "AMZN, DOG, MSFT, NVDA, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "18:01:04",
+      "kind": "SKIP",
+      "symbol": "MU",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:04",
+      "kind": "SKIP",
+      "symbol": "INTC",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "19:01:03",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, DOG, MSFT, NVDA, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "INTC",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "IWM",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "IWM",
+      "detail": "49 az @ 293.27"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "SPY",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:04",
+      "kind": "CLOSE",
+      "symbol": "INTC",
+      "detail": "51 az @ 124.81"
+    },
+    {
+      "time": "21:45:05",
+      "kind": "CLOSE",
+      "symbol": "SPY",
+      "detail": "19 az @ 740.72"
+    },
+    {
+      "time": "21:45:05",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "20 az @ 720.87"
+    },
+    {
+      "time": "21:45:06",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "8 az @ 988.20"
+    }
+  ],
+  "regime_changes": [],
+  "warnings": [
+    {
+      "time": "15:34:38",
+      "level": "WARNING",
+      "message": "Download calendario fallito: <urlopen error [Errno -5] No address associated with hostname> — provo la cache."
+    },
+    {
+      "time": "18:01:04",
+      "level": "WARNING",
+      "message": "SKIP MU: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:04",
+      "level": "WARNING",
+      "message": "SKIP INTC: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    }
+  ],
+  "open_positions": {}
+}

@@ -1,0 +1,130 @@
+{
+  "session_start": "2026-06-15 20:55:49.733643",
+  "session_end": "2026-06-15 22:01:15.819997",
+  "mode": "PAPER",
+  "timeframe": "1Hour",
+  "symbols": [
+    "SPY",
+    "SH",
+    "RWM",
+    "DOG",
+    "NVDA",
+    "MU",
+    "QQQ",
+    "AAPL",
+    "AMZN",
+    "INTC",
+    "IWM",
+    "MSFT"
+  ],
+  "clean_shutdown": true,
+  "start_equity": 97521.42,
+  "final_equity": 97459.55,
+  "peak_equity": 100624.81,
+  "trades": [],
+  "events": [
+    {
+      "time": "20:59:07",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, DOG, MSFT, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "20:59:12",
+      "kind": "SKIP",
+      "symbol": "MU",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:59:13",
+      "kind": "SKIP",
+      "symbol": "INTC",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "INTC",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:02",
+      "kind": "CLOSE",
+      "symbol": "IWM",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "5 az @ 1084.60"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "INTC",
+      "detail": "36 az @ 128.20"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "SPY",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "SPY",
+      "detail": "19 az @ 754.40"
+    },
+    {
+      "time": "21:45:04",
+      "kind": "CLOSE",
+      "symbol": "IWM",
+      "detail": "49 az @ 294.74"
+    },
+    {
+      "time": "21:45:05",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "19 az @ 743.39"
+    },
+    {
+      "time": "22:01:04",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, DOG, IWM, MSFT, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    }
+  ],
+  "regime_changes": [],
+  "warnings": [
+    {
+      "time": "20:59:12",
+      "level": "WARNING",
+      "message": "SKIP MU: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:59:13",
+      "level": "WARNING",
+      "message": "SKIP INTC: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "21:14:19",
+      "level": "WARNING",
+      "message": "Impossibile leggere l'orologio del mercato: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    }
+  ],
+  "open_positions": {}
+}

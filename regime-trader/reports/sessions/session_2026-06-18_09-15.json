@@ -1,0 +1,364 @@
+{
+  "session_start": "2026-06-17 16:37:24.256152",
+  "session_end": "2026-06-18 09:15:16.070219",
+  "mode": "PAPER",
+  "timeframe": "1Hour",
+  "symbols": [
+    "SPY",
+    "SH",
+    "RWM",
+    "DOG",
+    "NVDA",
+    "MU",
+    "QQQ",
+    "AAPL",
+    "AMZN",
+    "INTC",
+    "IWM",
+    "MSFT"
+  ],
+  "clean_shutdown": true,
+  "start_equity": 96125.34,
+  "final_equity": 95759.89,
+  "peak_equity": 100624.81,
+  "trades": [
+    {
+      "timestamp": "2026-06-17T16:42:03.577162",
+      "symbol": "SPY",
+      "direction": "LONG",
+      "shares": 19,
+      "entry": 749.77,
+      "stop": 744.9291589363767,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-17T16:42:06.917959",
+      "symbol": "RWM",
+      "direction": "LONG",
+      "shares": 1048,
+      "entry": 13.75,
+      "stop": 13.70965807009564,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-17T16:42:10.355747",
+      "symbol": "AMZN",
+      "direction": "LONG",
+      "shares": 59,
+      "entry": 240.83,
+      "stop": 239.75390356278112,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-17T18:01:05.325802",
+      "symbol": "MU",
+      "direction": "LONG",
+      "shares": 11,
+      "entry": 1059.805,
+      "stop": 1003.2501970798806,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-17T18:01:08.626215",
+      "symbol": "IWM",
+      "direction": "LONG",
+      "shares": 18,
+      "entry": 295.4,
+      "stop": 291.08196277864374,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-17T21:01:04.754701",
+      "symbol": "SH",
+      "direction": "LONG",
+      "shares": 431,
+      "entry": 33.38,
+      "stop": 33.30283528831389,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-17T21:01:08.400832",
+      "symbol": "QQQ",
+      "direction": "LONG",
+      "shares": 19,
+      "entry": 730.29,
+      "stop": 725.9948428789879,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-17T21:01:11.901143",
+      "symbol": "RWM",
+      "direction": "LONG",
+      "shares": 396,
+      "entry": 13.74,
+      "stop": 13.698551022065674,
+      "regime": "STRONG_BULL",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T00:01:49.966005",
+      "symbol": "SH",
+      "direction": "LONG",
+      "shares": 427,
+      "entry": 33.59,
+      "stop": 33.30071343957439,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T00:02:22.151664",
+      "symbol": "RWM",
+      "direction": "LONG",
+      "shares": 1033,
+      "entry": 13.905,
+      "stop": 13.799742523306183,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T00:02:54.445678",
+      "symbol": "MU",
+      "direction": "LONG",
+      "shares": 13,
+      "entry": 1043.95,
+      "stop": 1006.2487405846241,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T00:03:26.693204",
+      "symbol": "DOG",
+      "direction": "LONG",
+      "shares": 649,
+      "entry": 22.11,
+      "stop": 22.069826882378518,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T00:03:59.020551",
+      "symbol": "AAPL",
+      "direction": "LONG",
+      "shares": 48,
+      "entry": 296.07,
+      "stop": 295.0951629102615,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    }
+  ],
+  "events": [
+    {
+      "time": "18:01:08",
+      "kind": "STOP",
+      "symbol": "MU",
+      "detail": "stop @ 1003.25"
+    },
+    {
+      "time": "18:01:13",
+      "kind": "BUY",
+      "symbol": "IWM",
+      "detail": "18 az @ 295.38"
+    },
+    {
+      "time": "18:01:13",
+      "kind": "STOP",
+      "symbol": "IWM",
+      "detail": "stop @ 291.08"
+    },
+    {
+      "time": "18:01:13",
+      "kind": "SKIP",
+      "symbol": "AMZN",
+      "detail": "cooldown post-vendita fino alle 18:17"
+    },
+    {
+      "time": "19:01:04",
+      "kind": "SKIP",
+      "symbol": "DOG, INTC, MSFT, QQQ, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "20:01:04",
+      "kind": "SKIP",
+      "symbol": "AMZN, DOG, INTC, MSFT, QQQ, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "20:01:04",
+      "kind": "SKIP",
+      "symbol": "*",
+      "detail": "evento macro: Federal Funds Rate — niente BUY"
+    },
+    {
+      "time": "20:03:13",
+      "kind": "CLOSE",
+      "symbol": "AAPL",
+      "detail": "48 az @ 296.41"
+    },
+    {
+      "time": "20:04:45",
+      "kind": "CLOSE",
+      "symbol": "SPY",
+      "detail": "19 az @ 745.34"
+    },
+    {
+      "time": "20:05:22",
+      "kind": "CLOSE",
+      "symbol": "IWM",
+      "detail": "18 az @ 291.24"
+    },
+    {
+      "time": "21:01:04",
+      "kind": "SKIP",
+      "symbol": "AMZN, DOG, INTC, IWM, MSFT, NVDA, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "21:01:07",
+      "kind": "BUY",
+      "symbol": "SH",
+      "detail": "431 az @ 33.35"
+    },
+    {
+      "time": "21:01:07",
+      "kind": "STOP",
+      "symbol": "SH",
+      "detail": "stop @ 33.30"
+    },
+    {
+      "time": "21:01:08",
+      "kind": "SKIP",
+      "symbol": "MU",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "21:01:10",
+      "kind": "BUY",
+      "symbol": "QQQ",
+      "detail": "19 az @ 730.38"
+    },
+    {
+      "time": "21:01:11",
+      "kind": "STOP",
+      "symbol": "QQQ",
+      "detail": "stop @ 725.99"
+    },
+    {
+      "time": "21:01:14",
+      "kind": "BUY",
+      "symbol": "RWM",
+      "detail": "396 az @ 13.75"
+    },
+    {
+      "time": "21:01:14",
+      "kind": "STOP",
+      "symbol": "RWM",
+      "detail": "stop @ 13.70"
+    },
+    {
+      "time": "21:13:29",
+      "kind": "CLOSE",
+      "symbol": "RWM",
+      "detail": "396 az @ 13.78"
+    },
+    {
+      "time": "21:21:24",
+      "kind": "CLOSE",
+      "symbol": "QQQ",
+      "detail": "19 az @ 725.79"
+    },
+    {
+      "time": "21:45:03",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:04",
+      "kind": "CLOSE",
+      "symbol": "SH",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:45:04",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "11 az @ 1058.43"
+    },
+    {
+      "time": "21:45:05",
+      "kind": "CLOSE",
+      "symbol": "SH",
+      "detail": "431 az @ 33.64"
+    },
+    {
+      "time": "22:01:03",
+      "kind": "SKIP",
+      "symbol": "AMZN, INTC, IWM, MSFT, NVDA, QQQ, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "00:02:21",
+      "kind": "BUY",
+      "symbol": "SH",
+      "detail": "427 az @ 33.59"
+    },
+    {
+      "time": "00:02:54",
+      "kind": "BUY",
+      "symbol": "RWM",
+      "detail": "1033 az @ 13.90"
+    },
+    {
+      "time": "00:03:26",
+      "kind": "BUY",
+      "symbol": "MU",
+      "detail": "13 az @ 1043.95"
+    },
+    {
+      "time": "00:03:58",
+      "kind": "BUY",
+      "symbol": "DOG",
+      "detail": "649 az @ 22.11"
+    },
+    {
+      "time": "00:04:30",
+      "kind": "BUY",
+      "symbol": "AAPL",
+      "detail": "48 az @ 296.07"
+    }
+  ],
+  "regime_changes": [
+    {
+      "time": "00:01:49",
+      "old": "STRONG_BULL",
+      "new": "STRONG_BEAR",
+      "probability": 0.9999999498686533
+    }
+  ],
+  "warnings": [
+    {
+      "time": "16:38:18",
+      "level": "WARNING",
+      "message": "Download calendario fallito: <urlopen error [Errno -5] No address associated with hostname> — provo la cache."
+    },
+    {
+      "time": "21:01:08",
+      "level": "WARNING",
+      "message": "SKIP MU: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "00:01:49",
+      "level": "WARNING",
+      "message": "Regime change confermato: STRONG_BULL → STRONG_BEAR (3 barre)"
+    }
+  ],
+  "open_positions": {}
+}

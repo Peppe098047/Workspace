@@ -1,0 +1,569 @@
+{
+  "session_start": "2026-06-18 16:17:48.526072",
+  "session_end": "2026-06-19 17:12:31.959286",
+  "mode": "PAPER",
+  "timeframe": "1Hour",
+  "symbols": [
+    "SPY",
+    "SH",
+    "RWM",
+    "DOG",
+    "NVDA",
+    "MU",
+    "QQQ",
+    "AAPL",
+    "AMZN",
+    "INTC",
+    "IWM",
+    "AVGO"
+  ],
+  "clean_shutdown": true,
+  "start_equity": 95759.33,
+  "final_equity": 95913.61,
+  "peak_equity": 100624.81,
+  "trades": [
+    {
+      "timestamp": "2026-06-18T16:20:04.792690",
+      "symbol": "MU",
+      "direction": "LONG",
+      "shares": 6,
+      "entry": 1118.26,
+      "stop": 1018.0535281744311,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T16:20:08.408986",
+      "symbol": "AAPL",
+      "direction": "LONG",
+      "shares": 47,
+      "entry": 299.25,
+      "stop": 296.22346460274093,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T16:20:11.762948",
+      "symbol": "AVGO",
+      "direction": "LONG",
+      "shares": 31,
+      "entry": 409.47,
+      "stop": 389.29031297288157,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T16:20:15.111925",
+      "symbol": "SH",
+      "direction": "LONG",
+      "shares": 431,
+      "entry": 33.31,
+      "stop": 33.24457958952015,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T16:20:16.836381",
+      "symbol": "RWM",
+      "direction": "LONG",
+      "shares": 698,
+      "entry": 13.79,
+      "stop": 13.740035247160126,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T17:01:05.312975",
+      "symbol": "INTC",
+      "direction": "LONG",
+      "shares": 54,
+      "entry": 131.0,
+      "stop": 119.29263249582078,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T18:01:05.699130",
+      "symbol": "DOG",
+      "direction": "LONG",
+      "shares": 651,
+      "entry": 22.035,
+      "stop": 21.99542288597493,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T20:01:06.014647",
+      "symbol": "SH",
+      "direction": "LONG",
+      "shares": 431,
+      "entry": 33.26,
+      "stop": 33.19921566572419,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    },
+    {
+      "timestamp": "2026-06-18T20:01:09.744119",
+      "symbol": "DOG",
+      "direction": "LONG",
+      "shares": 651,
+      "entry": 22.03,
+      "stop": 21.991999822691007,
+      "regime": "STRONG_BEAR",
+      "dry_run": false
+    }
+  ],
+  "events": [
+    {
+      "time": "17:01:04",
+      "kind": "SKIP",
+      "symbol": "AMZN, DOG, IWM, NVDA, QQQ, RWM, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "17:01:05",
+      "kind": "SKIP",
+      "symbol": "MU",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "17:01:09",
+      "kind": "BUY",
+      "symbol": "INTC",
+      "detail": "54 az @ 130.92"
+    },
+    {
+      "time": "17:01:10",
+      "kind": "STOP",
+      "symbol": "INTC",
+      "detail": "stop @ 119.29"
+    },
+    {
+      "time": "17:01:10",
+      "kind": "SKIP",
+      "symbol": "AVGO",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "17:44:49",
+      "kind": "CLOSE",
+      "symbol": "AAPL",
+      "detail": "47 az @ 296.21"
+    },
+    {
+      "time": "18:01:04",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, IWM, NVDA, QQQ, RWM, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "18:01:05",
+      "kind": "SKIP",
+      "symbol": "MU",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:05",
+      "kind": "SKIP",
+      "symbol": "INTC",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:05",
+      "kind": "SKIP",
+      "symbol": "AVGO",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:10",
+      "kind": "BUY",
+      "symbol": "DOG",
+      "detail": "651 az @ 22.04"
+    },
+    {
+      "time": "18:01:10",
+      "kind": "STOP",
+      "symbol": "DOG",
+      "detail": "stop @ 22.00"
+    },
+    {
+      "time": "19:05:32",
+      "kind": "CLOSE",
+      "symbol": "SH",
+      "detail": "431 az @ 33.23"
+    },
+    {
+      "time": "19:16:45",
+      "kind": "CLOSE",
+      "symbol": "DOG",
+      "detail": "651 az @ 21.99"
+    },
+    {
+      "time": "20:01:05",
+      "kind": "SKIP",
+      "symbol": "MU",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:01:05",
+      "kind": "SKIP",
+      "symbol": "INTC",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:01:06",
+      "kind": "SKIP",
+      "symbol": "AVGO",
+      "detail": "stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:01:08",
+      "kind": "BUY",
+      "symbol": "SH",
+      "detail": "431 az @ 33.28"
+    },
+    {
+      "time": "20:01:09",
+      "kind": "STOP",
+      "symbol": "SH",
+      "detail": "stop @ 33.20"
+    },
+    {
+      "time": "21:35:06",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, DOG, IWM, NVDA, RWM, SPY",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "21:49:07",
+      "kind": "CLOSE",
+      "symbol": "AVGO",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:49:27",
+      "kind": "CLOSE",
+      "symbol": "INTC",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:49:47",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:50:07",
+      "kind": "CLOSE",
+      "symbol": "SH",
+      "detail": "square-off serale"
+    },
+    {
+      "time": "21:54:26",
+      "kind": "CLOSE",
+      "symbol": "MU",
+      "detail": "6 az @ 1147.22"
+    },
+    {
+      "time": "21:54:26",
+      "kind": "CLOSE",
+      "symbol": "INTC",
+      "detail": "54 az @ 134.54"
+    },
+    {
+      "time": "21:54:26",
+      "kind": "CLOSE",
+      "symbol": "AVGO",
+      "detail": "31 az @ 411.06"
+    },
+    {
+      "time": "21:54:26",
+      "kind": "CLOSE",
+      "symbol": "SH",
+      "detail": "431 az @ 33.26"
+    },
+    {
+      "time": "22:05:15",
+      "kind": "SKIP",
+      "symbol": "*",
+      "detail": "mercato chiuso: niente BUY"
+    },
+    {
+      "time": "10:03:53",
+      "kind": "SKIP",
+      "symbol": "*",
+      "detail": "mercato chiuso: niente BUY"
+    }
+  ],
+  "regime_changes": [
+    {
+      "time": "10:03:52",
+      "old": "STRONG_BEAR",
+      "new": "EUPHORIA",
+      "probability": 0.9999950772765464
+    }
+  ],
+  "warnings": [
+    {
+      "time": "16:17:50",
+      "level": "WARNING",
+      "message": "Download calendario fallito: <urlopen error [Errno -5] No address associated with hostname> — provo la cache."
+    },
+    {
+      "time": "17:01:05",
+      "level": "WARNING",
+      "message": "SKIP MU: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "17:01:10",
+      "level": "WARNING",
+      "message": "SKIP AVGO: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:05",
+      "level": "WARNING",
+      "message": "SKIP MU: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:05",
+      "level": "WARNING",
+      "message": "SKIP INTC: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "18:01:05",
+      "level": "WARNING",
+      "message": "SKIP AVGO: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:01:05",
+      "level": "WARNING",
+      "message": "SKIP MU: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:01:05",
+      "level": "WARNING",
+      "message": "SKIP INTC: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:01:06",
+      "level": "WARNING",
+      "message": "SKIP AVGO: stop SELL già aperto sul broker: skip BUY per evitare wash-trade Alpaca"
+    },
+    {
+      "time": "20:01:40",
+      "level": "ERROR",
+      "message": "Errore esecuzione ordine DOG: name 'client_order_id' is not defined"
+    },
+    {
+      "time": "20:53:57",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')) — retry in 1.0s"
+    },
+    {
+      "time": "21:35:01",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')) — retry in 1.0s"
+    },
+    {
+      "time": "21:42:03",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — retry in 1.0s"
+    },
+    {
+      "time": "21:42:24",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "21:42:46",
+      "level": "WARNING",
+      "message": "Impossibile verificare stop aperti per AVGO: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "21:43:06",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "21:43:27",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "21:43:49",
+      "level": "ERROR",
+      "message": "Stop broker mancante per AVGO ma ripristino fallito: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "21:44:09",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "21:44:30",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "21:44:53",
+      "level": "WARNING",
+      "message": "Errore trailing stop INTC: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "21:45:13",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "21:45:34",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "21:45:56",
+      "level": "WARNING",
+      "message": "Errore trailing stop MU: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "21:46:16",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "21:46:27",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "21:46:49",
+      "level": "WARNING",
+      "message": "Errore trailing stop SH: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/orders?status=open (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "21:47:09",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "21:47:30",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "21:47:52",
+      "level": "WARNING",
+      "message": "Impossibile leggere l'orologio del mercato: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "21:48:12",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "21:48:33",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "21:48:49",
+      "level": "WARNING",
+      "message": "Impossibile leggere l'orologio del mercato: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "21:49:27",
+      "level": "WARNING",
+      "message": "Invio Telegram fallito: <urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "time": "21:49:47",
+      "level": "WARNING",
+      "message": "Invio Telegram fallito: <urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "time": "21:50:07",
+      "level": "WARNING",
+      "message": "Invio Telegram fallito: <urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "time": "21:50:27",
+      "level": "WARNING",
+      "message": "Invio Telegram fallito: <urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "time": "22:01:20",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/bars?start=2026-06-18T19%3A00%3A00%2B00%3A00&timeframe=1Hour&feed=iex&symbols=SPY&limit=10000 (Caused by NameResolutionError(\"HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "22:01:41",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/bars?start=2026-06-18T19%3A00%3A00%2B00%3A00&timeframe=1Hour&feed=iex&symbols=SPY&limit=10000 (Caused by NameResolutionError(\"HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "22:02:03",
+      "level": "WARNING",
+      "message": "Aggiornamento cache pre-pipeline fallito: HTTPSConnectionPool(host='data.alpaca.markets', port=443): Max retries exceeded with url: /v2/stocks/bars?start=2026-06-18T19%3A00%3A00%2B00%3A00&timeframe=1Hour&feed=iex&symbols=SPY&limit=10000 (Caused by NameResolutionError(\"HTTPSConnection(host='data.alpaca.markets', port=443): Failed to resolve 'data.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — uso dati correnti."
+    },
+    {
+      "time": "22:02:23",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "22:02:44",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "22:03:06",
+      "level": "WARNING",
+      "message": "Sync posizioni Alpaca fallito: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — uso stato locale."
+    },
+    {
+      "time": "22:03:26",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "22:03:47",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "22:04:09",
+      "level": "ERROR",
+      "message": "Impossibile leggere account Alpaca: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — skip esecuzione."
+    },
+    {
+      "time": "22:04:09",
+      "level": "CRITICAL",
+      "message": "Connessione API persa: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/account (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\"))"
+    },
+    {
+      "time": "22:04:19",
+      "level": "WARNING",
+      "message": "Invio Telegram fallito: <urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "time": "22:04:39",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 1.0s"
+    },
+    {
+      "time": "22:05:00",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 2/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by NameResolutionError(\"HTTPSConnection(host='paper-api.alpaca.markets', port=443): Failed to resolve 'paper-api.alpaca.markets' ([Errno -3] Temporary failure in name resolution)\")) — retry in 2.0s"
+    },
+    {
+      "time": "10:03:48",
+      "level": "WARNING",
+      "message": "Errore di rete (tentativo 1/3): HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Read timed out. (read timeout=None) — retry in 1.0s"
+    },
+    {
+      "time": "10:03:52",
+      "level": "WARNING",
+      "message": "Regime change confermato: STRONG_BEAR → EUPHORIA (3 barre)"
+    }
+  ],
+  "open_positions": {}
+}

@@ -1,0 +1,58 @@
+{
+  "session_start": "2026-06-15 15:33:05.067316",
+  "session_end": "2026-06-15 15:40:11.322054",
+  "mode": "PAPER",
+  "timeframe": "1Hour",
+  "symbols": [
+    "SPY",
+    "SH",
+    "RWM",
+    "DOG",
+    "NVDA",
+    "MU",
+    "QQQ",
+    "AAPL",
+    "AMZN",
+    "INTC",
+    "IWM",
+    "MSFT"
+  ],
+  "clean_shutdown": false,
+  "start_equity": 97457.85,
+  "final_equity": 97457.85,
+  "peak_equity": 100624.81,
+  "trades": [],
+  "events": [
+    {
+      "time": "15:36:52",
+      "kind": "SKIP",
+      "symbol": "AAPL, AMZN, DOG, MSFT, NVDA, RWM, SH",
+      "detail": "fuori dal ranking momentum top-K"
+    },
+    {
+      "time": "15:36:52",
+      "kind": "SKIP",
+      "symbol": "*",
+      "detail": "blackout apertura (30 min): niente BUY"
+    }
+  ],
+  "regime_changes": [],
+  "warnings": [
+    {
+      "time": "15:33:07",
+      "level": "WARNING",
+      "message": "Download calendario fallito: <urlopen error [Errno -5] No address associated with hostname> — provo la cache."
+    },
+    {
+      "time": "15:40:00",
+      "level": "CRITICAL",
+      "message": "Errore non gestito: can't compare offset-naive and offset-aware datetimes"
+    },
+    {
+      "time": "15:40:00",
+      "level": "CRITICAL",
+      "message": "ALERT: ERRORE CRITICO: can't compare offset-naive and offset-aware datetimes"
+    }
+  ],
+  "open_positions": {}
+}
