@@ -1,0 +1,8 @@
+services:
+  hello:
+    build: .
+    container_name: hello-world
+    ports:
+      # host:container -> il file sarà su http://localhost:8080/hello.txt
+      - "8080:80"
+    restart: unless-stopped
